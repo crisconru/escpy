@@ -1,6 +1,5 @@
-# Mac, test, ides, etc
+# Mac, ides, etc
 .DS_Store
-test/
 .vscode
 
 # Byte-compiled / optimized / DLL files
@@ -8,6 +7,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 src/__pycache__
+test/__pycache__
 
 # C extensions
 *.so
