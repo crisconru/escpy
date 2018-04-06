@@ -1,5 +1,3 @@
-
-
 class ESCPOS:
     # HEX representation of non alphabetical ESCPOS characters
     esc_hex = {
