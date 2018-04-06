@@ -10,6 +10,21 @@ Then you have 3 different option to send an ESCPOS command. We are going to send
 1) ASCII mode
 ```
 # Ex: ESC d 4
-esc.ascii_command('ESC', 'd', 'n')
+esc_in_bytes = esc.ascii_command('ESC', 'd', 4)
 ```
-2)
+2) HEX mode
+```
+# Ex: 1B 64 04
+esc_in_bytes = esc.hex_command('1B', '64', '04')
+```
+3) DEC mode
+```
+# Ex: 27 100 4
+esc_in_bytes = esc.dec_command(27, 100, 4)
+```
+You can also transform text with  
+```
+# Ex: Lorem ipsum ...
+esc_in_bytes = esc.string_to_escpos('Lorem ipsum...')
+```
+
