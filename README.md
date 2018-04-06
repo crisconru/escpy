@@ -1,5 +1,5 @@
 # escpy
-Is and implementation of the ESCPOS protocol to use with thermal printer
+Is an implementation of the ESCPOS protocol to use with thermal printer
 ## Usage
 First of all you should import the module  
 ```
